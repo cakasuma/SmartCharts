@@ -224,6 +224,13 @@
             height: $small-icon-size;
             margin-bottom: 2px;
             margin-right: 1.3em;
+
+            svg {
+                @include themify($themes) {
+                    fill: themed('CatDisplayText');
+                    stroke: themed('CatDisplayText');
+                }
+            }
         }
     }
     .cq-item,
